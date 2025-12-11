@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@theme {
+  /* 1. Your Custom Colors */
+  --color-deep-teal: #0B242D;
+  --color-accent-gold: #C5A059;
+  --color-glass-dark: rgba(11, 36, 45, 0.85);
+
+  /* 2. Your Fonts */
+  --font-sans: "Montserrat", sans-serif;
+
+  /* 3. Your Background Image */
+  --background-image-split-level: url("https://images.unsplash.com/photo-1588947130823-db168fa854ac?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+
+  /* 4. NEW: Marquee Animation Definition */
+  /* This creates the 'animate-marquee' utility */
+  --animate-marquee: marquee 25s linear infinite;
+
+  @keyframes marquee {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-100%); }
+  }
+}
+
+/* 5. Global Styles */
+body {
+  background-color: var(--color-deep-teal);
+  color: white;
+  margin: 0;
+}
